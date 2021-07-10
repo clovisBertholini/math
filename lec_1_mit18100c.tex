@@ -9,14 +9,64 @@
 % Replace `letterpaper' with`a4paper' for UK/EU standard size
 %\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
 
+% The following causes equations to be numbered within sections
+\numberwithin{equation}{section}
+% We’ll use the equation counter for all our theorem environments, so
+% that everything will be numbered in the same sequence.
+%plain
+%Theorem, Lemma, Corollary, Proposition, Conjecture,Criterion, Assertion
+%definition
+%Definition, Condition, Problem, Example, Exercise,Algorithm, Question, Axiom, Property, Assumption,Hypothesis
+%remark
+%Remark, Note, Notation, Claim, Summary,Acknowledgment, Case, Conclusion
+%       Theorem environments
+\theoremstyle{plain} %% This is the default, anyway
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}{Corollary}[section]
+\newtheorem{lem}{Lemma}[section]
+\newtheorem{prop}{Proposition}[section]
+\newtheorem{conj}{Conjecture}[section]
+\newtheorem{cri}{Criterion}[section]
+\newtheorem{asser}{Assertion}[section]
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+\newtheorem{ex}{Example}[section]
+\newtheorem{cond}{Condition}[section]
+\newtheorem{prob}{Problem}[section]
+\newtheorem{exer}{Exercise}[section]
+\newtheorem{ques}{Question}[section]
+\newtheorem{axi}{Axiom}[section]
+\newtheorem{fact}{Fact}[section]
+\newtheorem{property}{Property}[section]
+\newtheorem{hyp}{Hypothesis}[section]
+\newtheorem{alg}{Algorithm}[section]
+\newtheorem{assump}{Assumption}[section]
+
+
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}[section]
+\newtheorem{notation}{Notation}[section]
+\newtheorem{terminology}{Terminology}[section]
+\newtheorem{note}{Note}[section]
+\newtheorem{claim}{Claim}[section]
+\newtheorem{summary}{Summary}[section]
+\newtheorem{case}{Case}[section]
+\newtheorem{acknow}{Acknowledgment}[section]
+
+
+
 % Useful packages
 \usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
 \usepackage{graphicx}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 \usepackage{blindtext}
 \usepackage{multicol}
 
-\title{Analysis\\Notes of the Lecture 1}
+\title{Analysis\\Notes of the Lecture 1\\MIT - 18.100C}
 \author{Clóvis Wanderley Bertholini Sobrinho}
 
 \begin{document}
@@ -31,13 +81,36 @@
 Lecture 1. Sets. Ordered Sets. Examples. Ordering pairs of numbers. Largest element (maximum) and smallest element (minimum) of a subset of an ordered set.
 \end{abstract}
 
-\section{Introduction}
+\section{Sets}
 
-Your introduction goes here! Simply start writing your document and use the Recompile button to view the updated PDF preview. Examples of commonly used commands and features are listed below, to help you get started.
+A set $\mathcal{A}$ is a collection of objects $x$, which each object has a common property $p$. 
+We can take the set of people who has black eyes ($x\rightarrow\text{people}$ and $p\rightarrow\text{has black eyes}$ or the set planets which aren't in ours galaxy ($x\rightarrow\text{planets}$ and $p\rightarrow\text{the planet must be out of our galaxy}$. Obviously we have no interested about that kind of sets.
 
-Once you're familiar with the editor, you can find various project setting in the Overleaf menu, accessed via the button in the very top left of the editor. To view tutorials, user guides, and further documentation, please visit our \href{https://www.overleaf.com/learn}{help library}, or head to our plans page to \href{https://www.overleaf.com/user/subscription/plans}{choose your plan}.
+The sets we need study here are collections of mathematical objects, as numbers, functions, sequences, series, metric spaces among others. So, lets take a more formal definition of a set,
+
+\begin{defn}
+$\mathcal{A}=\lbrace x\mid x \text{ has } p\rbrace$
+\end{defn}
+
+\begin{ex}
+test
+\end{ex}
+
+\begin{rem}
+blsldfj sldfjdsfj
+\end{rem}
+
 
 \section{Some examples to get started}
+
+\begin{defn}
+$\mathcal{A}=\lbrace x\mid x \text{ has } p\rbrace$
+\end{defn}
+
+\begin{ex}
+test
+\end{ex}
+
 
 \subsection{How to create Sections and Subsections}
 
