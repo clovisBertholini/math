@@ -43,7 +43,6 @@
 \newtheorem{alg}{Algorithm}[section]
 \newtheorem{assump}{Assumption}[section]
 
-
 \theoremstyle{remark}
 \newtheorem{rem}{Remark}[section]
 \newtheorem{notation}{Notation}[section]
@@ -53,8 +52,6 @@
 \newtheorem{summary}{Summary}[section]
 \newtheorem{case}{Case}[section]
 \newtheorem{acknow}{Acknowledgment}[section]
-
-
 
 % Useful packages
 \usepackage{amsmath}
@@ -66,8 +63,8 @@
 \usepackage{blindtext}
 \usepackage{multicol}
 
-\title{Analysis\\Notes of the Lecture 1\\MIT - 18.100C}
-\author{Clóvis Wanderley Bertholini Sobrinho}
+\title{Principles of Mathematical Analysis\\Notes of the Lecture 1\\MIT - 18.100C}
+\author{Clóvis W. Bertholini Sb.}
 
 \begin{document}
 \begin{figure}[h]
@@ -82,9 +79,10 @@ Lecture 1. Sets. Ordered Sets. Examples. Ordering pairs of numbers. Largest elem
 \end{abstract}
 
 \section{Sets}
+Before we start with the mathematical analysis, we need review some topics of the set theoretic. Lets start by the definition of a general set, after that we'll go define the most important numerical sets. We'll also define what is an ordered set and their consequences as a maximum and minimum elements in its subset and ordering pairs of elements, resulted by the operations with this sets.
 
 A set $\mathcal{S}$ is a collection of objects $x$, which each object has a common property $p$. 
-We can take the set of people who has black eyes ($x\rightarrow\text{people}$ and $p\rightarrow\text{has black eyes}$ or the set planets which aren't in ours galaxy ($x\rightarrow\text{planets}$ and $p\rightarrow\text{the planet must be out of our galaxy}$. Obviously we have no interested about that kind of sets.
+We can take the set of people who has black eyes ($x$ is the people and $p$ is the property "has black eyes" or the set planets which aren't in ours galaxy ($x$ is the planets and $p$ is the property "the planet must be out of our galaxy"). Obviously we have no interested about that kind of sets.
 
 The sets we need study here are collections of mathematical objects, as numbers, functions, sequences, series, metric spaces among others. So, lets take a more formal definition of a set,
 
@@ -97,7 +95,7 @@ Let $\mathcal{S}$ above, if $x$ has the property $p$, we say that $x$ is an elem
     $x\in\mathcal{S}$
 \end{center}
 
-Otherwise, if $x \text{ has no the property} p$, then we write,
+Otherwise, if $x \text{ has no the property} p$, then we say that $x$ is not in $\mathcal{S}$ write,
 \begin{center}
     $x\notin\mathcal{S}$
 \end{center}
@@ -128,7 +126,7 @@ The example above shows us that we can describe a set in two ways, generally or 
 Lets start with numeric sets, the basic mathematical objects. There are many we already know as the natural numbers or integer numbers, also real numbers and complex numbers. We'll begin with the natural numbers.
 
 \begin{defn}
-    The natural numbers set is represented by the symbol $\mathbb{N}$, such that its elements starts at number $1$ and the next elements are always the previous element plus $1$ \textit{add infinitum},
+    The natural numbers set is represented by the symbol $\mathbb{N}$, such that its elements starts at number $1$ and the next elements are always the previous element plus $1$ \textit{ad infinitum},
     \begin{center}
         $\mathbb{N}=\lbrace1,(1)+1,(2)+1,(3)+1,(4)+1,\dots\rbrace$
     \end{center}
@@ -137,9 +135,25 @@ Lets start with numeric sets, the basic mathematical objects. There are many we 
         $\mathbb{N}=\lbrace1,2,3,4,5,\dots\rbrace$
     \end{center}
 \end{defn}
+\begin{defn}
+The set of the integer numbers, which is represented by the capital letter $\mathbb{Z}$, is constructed from $\mathbb{N}$, we must include at the set of the natural numbers the number $0$ and the negative numbers, to do it, just needed subtract $1$ of the first element of the natural numbers and so on, thus
+\begin{center}
+    $\mathbb{Z}=\lbrace\dots,(-4)-1, (-3)-1, (-2)-1, (-1)-1, (0)-1, (1)-1, \underbrace{1, 2, 3, 4, 5, \dots}_{\mathbb{N}}\rbrace$
+\end{center}
 
+Now, its easy to see $\mathbb{Z}$,
 
+\begin{center}
+    $\mathbb{Z}=\lbrace\dots, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, \dots\rbrace$
+\end{center}
+\end{defn}
 
+\begin{defn}
+The set of rational numbers, which is represented by capital letter $\mathbb{Q}$ is composed by fractions like $p/q$, where $p$ and $q$ are integer numbers, with always $q$ different of zero,
+\begin{center}
+    $\mathbb{Q}=\lbrace p/q\mid p\in\mathbb{Z}, q\in \mathbb{Z}, q\neq0\rbrace$ 
+\end{center}
+\end{defn}
 
 \section{Ordered Sets}
 
@@ -162,8 +176,28 @@ test
                 date={1976},
                 series={International Series in Pure and Applied Mathematics},
                 publisher={McGraw-Hill},
-                address={New York},
-                isbn={9780070542358}
+                address={New York - St. Louis - San Francisco - Auckland - Bogotá - Caracas - Lisbon - London - Madrid - Mexico City - Milan - Montreal - New Deli - San Juan - Singapore - Sydney - Tokio - Toronto},
+                isbn={0-07-054235-X}
+            }
+            \bib{Elon}{book}{
+                author={Elon Lages Lima},
+                title={Curso de Análise},
+                date={2002},
+                series={Projeto Euclides},
+                volume={1},
+                publisher={Instituto de Matemática Pura e Aplicada - IMPA},
+                address={Rio de Janeiro},
+                isbn={85-244-0116-9}
+            }
+            \bib{Yellowbook}{book}{
+                author={Murray H. Protter},
+                author={Charles B. Morrey},
+                title={A first course in real analysis},
+                date={1991},
+                series={Undergraduate texts in mathematics},
+                publisher={Springer-Verlag},
+                address={New York - Berlin - Heidelberg},
+                isbn={0-387-97437-7}
             }
         \end{biblist}
     \end{bibdiv}
