@@ -123,6 +123,15 @@ That way, we have,
 \end{ex}
 The example above shows us that we can describe a set in two ways, generally or specific, the specific way is good to work with sets whose a few elements, for sets with a great number of elements, generally way is more appropriated.
 
+Sometimes, there is no one element that satisfies a property $p$. In this case, we are in front of a set $\mathcal{S}$ with no one element. It is called the \textit{empty set} and denoted by $\varnothing$, so
+
+\begin{defn}
+Let $\mathcal{S}$ a set,
+\begin{center}
+    $\forall x$, we have $x \notin \mathcal{S}\Rightarrow \mathcal{S}=\varnothing$.
+\end{center}
+\end{defn}
+
 Lets start with numeric sets, the basic mathematical objects. There are many we already know as the natural numbers or integer numbers, also real numbers and complex numbers. We'll begin with the natural numbers.
 
 \begin{defn}
@@ -158,8 +167,21 @@ The set of rational numbers, which is represented by capital letter $\mathbb{Q}$
 \section{Ordered Sets}
 
 \begin{defn}
-$\mathcal{A}=\lbrace x\mid x \text{ has } p\rbrace$
+Let $\mathcal{S}$ be a set. An \textit{order} on $\mathcal{S}$ is a relation, denoted by $<$, with the following two properties:
+\begin{enumerate}
+    \item $x \in \mathcal{S} \Rightarrow \text{one and only one of the following statements is true:}$
+    \begin{enumerate}
+        \item $x<y$;
+        \item $x=y$;
+        \item $y<x$.
+    \end{enumerate}
+    \item $x<y \text{ and } y<z, x,y,z \in \mathcal{S} \Rightarrow x<z$.
+\end{enumerate}
 \end{defn}
+
+The statement $x<y$ may be read as \textit{"$x$ is less than $y$"} or \textit{$x$ is smaller than $y$"} or, also, \textit{"$x$ precedes $y$"}. It is often convenient to write $y>x$ in place of $x<y$.
+
+The notation $x\leq y$ indicates that $x<y$ or $x=y$, without specifying which of these two is to hold. In other words, $x\leq y$ is the negation of $x>y$.
 
 \begin{ex}
 test
