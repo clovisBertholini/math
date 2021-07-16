@@ -1,0 +1,30 @@
+\documentclass{amsart}
+\usepackage{amsmath}
+\usepackage[brazil]{babel}
+\author{Clovis W. Bertholini Sb.}
+\title{Problems and Exercises of Mathematical Analysis}
+\date{\today}
+\begin{document}
+\maketitle
+\textbf{1.} Shows that
+\begin{center}
+$a,b \in \mathbb{R} \Rightarrow ||a|-|b||\leq |a-b| \leq |a|+|b|$
+\end{center}
+How $a,b\in\mathbb{R}$ and we know that $\mathbb{R}$ is an ordered set, then, by definition, one and only one that following statements is true:
+\begin{enumerate}
+\item $a>b$
+\item $a=b$
+\item $a<b$
+\end{enumerate}
+Suppose that $a\geq b$
+\begin{enumerate}
+\item thus $a\geq0\Rightarrow b\geq0$. $a\in\mathbb{R},|a|=a, \forall a\geq0$ and $|a|=-a, \forall a<0$ the same with $b$, this way we have $|a|=a$ and $|b|=b$ what tells us $||a|-|b||=|a-b|$. How $a\geq b\Rightarrow a-b>0$, then $|a-b|=a-b$, by other hand, $a\geq0,b\geq0$ again $|a|=a$ and $|b|=b\Rightarrow|a|+|b|=a+b$, thus $a-b\leq a+b\Rightarrow|a-b|\leq|a|+|b|$.
+\begin{center}
+$||a|-|b||=|a-b|\leq |a|+|b|$
+\end{center}
+\item thus $a<0 \Rightarrow b<0$, that way, we have $|a|=-a$ and $|b|=-b \Rightarrow ||a|-|b||=|-a-(-b)|=|-a+b| \Rightarrow b-a>0 \Rightarrow |b-a|=b-a \text{ and how }a-b<0 \text{ then }|a-b|=-(a-b)=-a+b=b-a$ thus $||a|-|b||=|a-b|$. Now, we already know that $|a-b|=b-a=-(a-b)$, $|a|=-a$ and $|b|=-b \Rightarrow |a|+|b|=-a-b=-(a+b) \Rightarrow -(a-b)\leq-(a+b)\Rightarrow |a-b|\leq|a|+|b|$.
+\begin{center}
+$||a|-|b||=|a-b|\leq |a|+|b|$
+\end{center}
+\end{enumerate}
+\end{document}
