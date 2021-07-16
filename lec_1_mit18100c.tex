@@ -183,11 +183,31 @@ The statement $x<y$ may be read as \textit{"$x$ is less than $y$"} or \textit{$x
 
 The notation $x\leq y$ indicates that $x<y$ or $x=y$, without specifying which of these two is to hold. In other words, $x\leq y$ is the negation of $x>y$.
 
+\begin{defn}
+An \textit{ordered set} is a set $\mathcal{S}$ in which an order is defined and is denoted by $(\mathcal{S}, <)$.
+\end{defn}
+
 \begin{ex}
-test
+$\mathbb{Q}$ is an ordered set if $\forall r,s \in \mathbb{Q}, r<s$ is defined to mean that $s-r$ is a positive rational number.
 \end{ex}
 
+\begin{defn}[Bounded Above]
+Suppose $\mathcal{S}$ is an ordered set. Let $\mathcal{E}\subset\mathcal{S}$. If exists $\beta \in \mathcal{S}$ such that $x \leq \beta$ for all $x$ in $\mathcal{E}$, we say that $\mathcal{E}$ is bounded above and call $\beta$ an upper bound of $\mathcal{E}$. In mathematical words:
 
+\begin{center}
+    $\exists \beta\in\mathcal{S} \mid x\leq\beta, \forall x\in\mathcal{E},(\mathcal{S},<),\mathcal{E}\subset\mathcal{S}\Rightarrow\mathcal{E}$ is bounded above and $\beta$ is an upper bound of $\mathcal{E}$.
+\end{center}
+\end{defn}
+More easily, if exists at least one element in $\mathcal{S}$ which is bigger than all elements of $\mathcal{E}$, this element is an upper bound of $\mathcal{E}$ and we say that $\mathcal{E}$ is bounded above.
+
+\begin{defn}[Bounded Below]
+Suppose $\mathcal{S}$ is an ordered set. Let $\mathcal{E}\subset\mathcal{S}$. If exists $\beta \in \mathcal{S}$ such that $\beta\leq x$ for all $x$ in $\mathcal{E}$, we say that $\mathcal{E}$ is bounded below and call $\beta$ a lower bound of $\mathcal{E}$. In mathematical words:
+
+\begin{center}
+    $\exists \beta\in\mathcal{S} \mid \beta\leq x, \forall x\in\mathcal{E},(\mathcal{S},<),\mathcal{E}\subset\mathcal{S}\Rightarrow\mathcal{E}$ is bounded below and $\beta$ is a lower bound of $\mathcal{E}$.
+\end{center}
+\end{defn}
+This means, if exists at least one element in $\mathcal{S}$ which is smaller than all elements of $\mathcal{E}$, this element is a lower bound of $\mathcal{E}$ and we say that $\mathcal{E}$ is bounded below.
 
 
 \begin{bibdiv}
