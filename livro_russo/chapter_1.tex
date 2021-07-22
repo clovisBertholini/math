@@ -1,6 +1,15 @@
 \documentclass{amsart}
 \usepackage{amsmath}
 \usepackage[brazil]{babel}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage{float}
 \author{Clovis W. Bertholini Sb.}
 \title{Problems and Exercises of Mathematical Analysis}
 \date{\today}
@@ -49,4 +58,77 @@ Now, suppose that $a<b$, the proof is same as above, only changing $a$ by $b$.\\
         \item $|\frac{a}{b}|=\frac{|a|}{|b|}$, lets start with $\frac{a}{b}>0$, thus $a>0$ and $b>0$ or $a<0$ and $b<0$, in both cases $|\frac{a}{b}|=\frac{a}{b}=\frac{|a|}{|b|}$. If the division is a negative number $\frac{a}{b}<0$ then we have $a>0$ and $b<0$ or $a<0$ and $b>0$, lets take the first one, then $|a|=a$ and $|b|=-b$, so $|\frac{a}{b}|=\frac{a}{-b}=\frac{|a|}{|b|}$. For zero, it is a simple verification by substitution $|\frac{a}{b}|=|\frac{0}{b}|=|0|=0$. By other hand $\frac{|a|}{|b|}=\frac{|0|}{|b|}=\frac{0}{|b|}=0$, thus $|\frac{a}{b}|=\frac{|a|}{|b|}$.
         \item $\sqrt{a^2}=|a|$, If $a>0$ then $\sqrt{a^2}=a^{(\frac{1}{2})\times2}=a=|a|$. Now if $a<0$, so $\sqrt{(-a)^2}=\sqrt{-a\times-a}=\sqrt{a^2}=a^{(\frac{1}{2})\times2}=a=|a|$. For 0, it is only a substitution exercise, $\sqrt{0^2}=\sqrt{0}=0=|0|$.
     \end{enumerate}
+    
+\textbf{3.} Solve:
+\begin{enumerate}
+    \item $|x-1|<3$: we have two options, (a) $x-1\geq 0$ or (b) $x-1<0$.
+    \begin{enumerate}
+        \item if we have (a), then $|x-1|=x-1\Rightarrow x-1<3\Rightarrow x<4$.
+        \item Now, if we have (b), then $|x-1|=-(x-1) \Rightarrow -(x-1)<3\Rightarrow x-1>-3\Rightarrow x>-2$.
+        \item Thus, the result is the intersection of (a) and (b) $-2<x<4$.
+    \end{enumerate}  
+    \item $|x+1|>2$: here, same above question, (a) $x+1\geq 0$ or (b) $x+1<0$.
+    \begin{enumerate}
+        \item if we have (a), then $|x+1|=x+1\Rightarrow x+1>2 \Rightarrow x>1$.
+        \item Now, if we have (b) $|x+1|=-(x+1)\Rightarrow -(x+1)>2\Rightarrow x+1<-2\Rightarrow x<-3$.
+        \item Thus, $x<-3$ or $x>1$.
+    \end{enumerate}
+    \item $|2x+1|<1$: 
+    \begin{enumerate}
+        \item if $2x+1\geq 0\Rightarrow |2x+1|=2x+1\Rightarrow 2x+1<1\Rightarrow 2x<0\Rightarrow x<0$.
+        \item now if $2x+1<0\Rightarrow |2x+1|=-(2x+1)\Rightarrow -(2x+1)<1\Rightarrow 2x+1>-1\Rightarrow 2x>-2\Rightarrow x>-1$.
+        \item Thus, $-1<x<0$.
+    \end{enumerate}
+    \item $|x-1|<|x+1|$: Now we have four possibilities.
+    \begin{enumerate}
+        \item lets take $x-1\geq 0\Rightarrow |x-1|=x-1\Rightarrow x-1<|x+1|$.
+        \begin{enumerate}
+            \item if $x+1\geq0\Rightarrow |x+1|=x+1$, then $x-1<x+1\Rightarrow$ that is true $\forall x\in\mathbb{R}$.
+            \item if $x+1<0\Rightarrow|x+1|=-(x+1)\Rightarrow x-1<-(x-1)$ which is impossible $\forall x \in \mathbb{R}$.
+        \end{enumerate}
+        \item $x-1<0\Rightarrow|x-1|=-x+1$, thus $-x+1<|x+1|$
+        \begin{enumerate}
+            \item $x+1\geq0\Rightarrow |x+1|=x+1$, then $-x+1<x+1\Rightarrow-1+1<x+x\Rightarrow 2x>0\Rightarrow x>0$.
+            \item if $x+1<0\Rightarrow|x+1|=-(x+1)=-x-1\Rightarrow-x+1<-x-1$ which is impossible $\forall x \in \mathbb{R}$.
+        \end{enumerate}
+        \item Then, the result is the intersection between $\mathbb{R}$ and $x>0$, this way we have that the answer is $x>0$.
+    \end{enumerate}
+\end{enumerate}
+
+\textbf{4.} Find $f(-1), f(0), f(1), f(2), f(3), f(4)$, when $f(x)=x^3-6x^2+11x-6$:\\
+\begin{table}[H]
+\begin{tabular}{|r|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{$x$}} & \multicolumn{1}{|c|}{\textbf{$f(x)=x^3-6x^2+11x-6$}} \\ \hline
+$-1$                              & $f(-1)=(-1)^3-6(-1)^2+11(-1)-6=-1-6-11-6=-24$         \\ \hline
+$0$                               & $f(0)=(0)^3-6(0)^2+11(0)-6=0-0+0-6=-6$                \\ \hline
+$1$                               & $f(1)=(1)^3-6(1)^2+11(1)-6=1-6+11-6=0$               \\ \hline
+$2$                               & $f(2)=(2)^3-6(2)^2+11(2)-6=8-24+22-6=0$               \\ \hline
+$3$                               & $f(3)=(3)^3-6(3)^2+11(3)-6=27-54+33-6=0$             \\ \hline
+$4$                               & $f(4)=(4)^3-6(4)^2+11(4)-6=64-96+44-6=6$              \\ \hline
+\end{tabular}
+\end{table}
+
+\textbf{5.} Find $f(0), f(-3/4), f(-x), f(1/x), 1/f(x)$, when $f(x)=\sqrt{1+x^2}$:\\
+\begin{enumerate}
+    \item For $x=0\Rightarrow f(x)=f(0)=\sqrt{1+(0)^2}=\sqrt{1}=1$.
+    \item For $x=-3/4\Rightarrow f(x)=f\left(\dfrac{-3}{4}\right)=\sqrt{1+\left(\dfrac{-3}{4}\right)^2}=\sqrt{1+[\dfrac{(-3)^2}{4^2}]}=\sqrt{1+\dfrac{9}{16}}=\sqrt{\dfrac{16+9}{16}}=\sqrt{\dfrac{25}{16}}=\dfrac{\sqrt{25}}{\sqrt{16}}=\dfrac{5}{4}$.
+    \item For $x=-x\Rightarrow f(x)=f(-x)=\sqrt{1+(-x)^2}=\sqrt{1+(-x\times-x)}=\sqrt{1+(+x^2)}=\sqrt{1+x^2}$.
+    \item For $x=\dfrac{1}{x}\Rightarrow f(x)=f\left(\dfrac{1}{x}\right)=\sqrt{1+\dfrac{1}{x}}=\sqrt{\dfrac{x+1}{x}}=\sqrt{\dfrac{x+1}{x}\times\dfrac{x}{x}}=\dfrac{\sqrt{(x+1)x}}{\sqrt{x^2}}=\dfrac{\sqrt{(x+1)x}}{x}$.
+    \item $\dfrac{1}{f(x)}=\dfrac{1}{\sqrt{1+x^2}}=\dfrac{1}{\sqrt{1+x^2}}\times \dfrac{\sqrt{1+x^2}}{\sqrt{1+x^2}}=\dfrac{\sqrt{1+x^2}}{1+x^2}$.
+\end{enumerate}
+
+\textbf{6.} Take $f(x)=\arccos{(\log x)}$, find $f\left(\frac{1}{10}\right)$, $f(1)$, $f(10)$:\\
+    
+    First we need have to be in mind that $b=\arccos{a}\Rightarrow a=\cos{b}$.\\
+\begin{enumerate}
+    \item For $f\left(\frac{1}{10}\right)=\arccos{\left(\log\left(\frac{1}{10}\right)\right)}$, how $\log\left(\frac{1}{10}\right)=\log 10^{-1}=-1\times \log 10=-1\times1=-1$, we have $f\left(\frac{1}{10}\right)=\arccos{(-1)}$, we know $-1=\cos{b}\Rightarrow b=\pi \pm 2k\pi$ thus, $f\left(\frac{1}{10}\right)=\pi \pm 2k\pi, k\in\mathbb{Z}$.
+    \item For $f(1)=\arccos{(\log 1)}$, how $\log 1=\log 10^0=0\times\log10=0$, this way, $f(1)=\arccos{(0)}$, we know $0=\cos{b}\Rightarrow b=\dfrac{\pi}{2} \pm k\pi$ thus, $f(1)=\dfrac{\pi}{2}\pm k\pi, k \in\mathbb{Z}$.
+    \item For $f(10)=\arccos{(\log 10)}$, how $\log 10=1$, we have $f(10)=\arccos{(1)}$, we know $1=\cos{b\Rightarrow b=0\pm2k\pi}$, thus, $f(10)=0\pm2k\pi,k\in\mathbb{Z}$.
+\end{enumerate}
+
+\textbf{7.} Take $f(x)$ a linear function. Find $f(x)$ if $f(-1)=2$ and $f(2)=-3$.
+How we already know the equation for a linear function is $(y_0-y)=m(x_0-x)$, thus $(2-y)=m(-1-x)\Rightarrow m=\dfrac{-1-x}{2-y}$ and $(-3-y)=m(2-x)\Rightarrow m=\dfrac{2-x}{-3-y}$, this way, we have $\dfrac{-1-x}{2-y}=\dfrac{2-x}{-3-y}\Rightarrow\dfrac{-3-y}{2-y}=\dfrac{2-x}{-1-x}\Rightarrow (-1-x)\times(-3-y)=(2-x)\times(2-y)\Rightarrow3+y+3x+xy=4-2y-2x+xy\Rightarrow y+2y=4-3-2x-3x\Rightarrow 3y=1-5x\Rightarrow y=\dfrac{1-5x}{3}$, thus $f(x)=\dfrac{1-5x}{3}$.
+
+
 \end{document}
