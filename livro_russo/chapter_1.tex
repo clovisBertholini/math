@@ -18,13 +18,35 @@ How $a,b\in\mathbb{R}$ and we know that $\mathbb{R}$ is an ordered set, then, by
 \end{enumerate}
 Suppose that $a\geq b$
 \begin{enumerate}
-\item thus $a\geq0\Rightarrow b\geq0$. $a\in\mathbb{R},|a|=a, \forall a\geq0$ and $|a|=-a, \forall a<0$ the same with $b$, this way we have $|a|=a$ and $|b|=b$ what tells us $||a|-|b||=|a-b|$. How $a\geq b\Rightarrow a-b>0$, then $|a-b|=a-b$, by other hand, $a\geq0,b\geq0$ again $|a|=a$ and $|b|=b\Rightarrow|a|+|b|=a+b$, thus $a-b\leq a+b\Rightarrow|a-b|\leq|a|+|b|$.
+\item $a\geq0\Rightarrow b\geq0$. $a\in\mathbb{R},|a|=a, \forall a\geq0$ and $|a|=-a, \forall a<0$ the same with $b$, this way we have $|a|=a$ and $|b|=b$ what tells us $||a|-|b||=|a-b|$. How $a\geq b\Rightarrow a-b>0$, then $|a-b|=a-b$, by other hand, $a\geq0,b\geq0$ again $|a|=a$ and $|b|=b\Rightarrow|a|+|b|=a+b$, thus $a-b\leq a+b\Rightarrow|a-b|\leq|a|+|b|$.
 \begin{center}
-$||a|-|b||=|a-b|\leq |a|+|b|$
+\begin{enumerate}
+    \item if $b>0 \Rightarrow ||a|-|b||=|a-b|<|a|+|b|$
+    \item if $b=0 \Rightarrow ||a|-|b||=|a-b|=|a|+|b|$
+\end{enumerate}
 \end{center}
-\item thus $a<0 \Rightarrow b<0$, that way, we have $|a|=-a$ and $|b|=-b \Rightarrow ||a|-|b||=|-a-(-b)|=|-a+b| \Rightarrow b-a>0 \Rightarrow |b-a|=b-a \text{ and how }a-b<0 \text{ then }|a-b|=-(a-b)=-a+b=b-a$ thus $||a|-|b||=|a-b|$. Now, we already know that $|a-b|=b-a=-(a-b)$, $|a|=-a$ and $|b|=-b \Rightarrow |a|+|b|=-a-b=-(a+b) \Rightarrow -(a-b)\leq-(a+b)\Rightarrow |a-b|\leq|a|+|b|$.
+\item $a<0 \Rightarrow b<0$, that way, we have $|a|=-a$ and $|b|=-b \Rightarrow ||a|-|b||=|-a-(-b)|=|-a+b| \Rightarrow b-a<0 \Rightarrow |b-a|=-(b-a)=a-b \text{ and how }a-b>0 \text{ then }|a-b|=a-b$ thus $||a|-|b||=|a-b|$. Now, we already know that $|a-b|=a-b$, $|a|=-a$ and $|b|=-b \Rightarrow |a|+|b|=-a-b \Rightarrow -a-b\geq a-b, \forall a<0, b<0, a>b\Rightarrow |a-b|\leq|a|+|b|$.
 \begin{center}
-$||a|-|b||=|a-b|\leq |a|+|b|$
+\begin{enumerate}
+    \item if $b>0 \Rightarrow ||a|-|b||=|a-b|<|a|+|b|$
+    \item if $a=0 \Rightarrow ||a|-|b||=|a-b|=|a|+|b|$
+\end{enumerate}
+\end{center}
+\item If $a>0$ and $b<0$, this way we have $|a|=a$ and $|b|=-b$ and, by definition, $a>b$ obviously. $||a|-|b||=|a-(-b)|=|a+b|$, if $|a|<|b| \Rightarrow |a+b|=b-a=-(a-b)$, if $|a|>|b| \Rightarrow |a+b|=a-b$. The second term of inequality is $|a-b|$ that always be equals to $a-b$. We have to see also $|a|+|b|=a-b$, remember that fact of $a>0$ and $b<0$, then we have,
+\begin{center}
+\begin{enumerate}
+    \item if $|a|<|b| \Rightarrow ||a|-|b||<|a-b|=|a|+|b|$
+    \item if $|a|>|b| \Rightarrow ||a|-|b||=|a-b|=|a|+|b|$
+\end{enumerate}
 \end{center}
 \end{enumerate}
+Now, suppose that $a<b$, the proof is same as above, only changing $a$ by $b$.\\
+
+\textbf{2.} Shows that
+    \begin{enumerate}
+        \item $|ab|=|a|\times|b|$, lets start with: if $a$ and $b$ were bigger than $0$, then $|ab|=ab=a\times b$, but if $a>0$ then $|a|=a$ and if $b>0$ then $|b|=b$, thus $a\times b=|a|\times|b|$, as we want. Now, if the product $ab$ is a negative number, or $a$ or $b$ is a negative number, lets take $a<0$, then $|a|=-a$ and $|b|=b$. How $ab<0$, we have $|ab|=-ab=-a\times b=|a|\times|b|$. For $ab=0$ its only necessary change or $a$ or $b$ by $0$, so if $a=0$ then $|0.b|=|0|\times|b|=0$.
+        \item $|a|^2=a^2$, lets do it again, if $a>0$ then $|a|=a$, this way, $|a|^2=a^2$. Now if $a<0$ then $|a|=-a$, this way $|a|^2=(-a)^2=-a\times-a=a^2$. It's obvious for $a=0$.
+        \item $|\frac{a}{b}|=\frac{|a|}{|b|}$, lets start with $\frac{a}{b}>0$, thus $a>0$ and $b>0$ or $a<0$ and $b<0$, in both cases $|\frac{a}{b}|=\frac{a}{b}=\frac{|a|}{|b|}$. If the division is a negative number $\frac{a}{b}<0$ then we have $a>0$ and $b<0$ or $a<0$ and $b>0$, lets take the first one, then $|a|=a$ and $|b|=-b$, so $|\frac{a}{b}|=\frac{a}{-b}=\frac{|a|}{|b|}$. For zero, it is a simple verification by substitution $|\frac{a}{b}|=|\frac{0}{b}|=|0|=0$. By other hand $\frac{|a|}{|b|}=\frac{|0|}{|b|}=\frac{0}{|b|}=0$, thus $|\frac{a}{b}|=\frac{|a|}{|b|}$.
+        \item $\sqrt{a^2}=|a|$, If $a>0$ then $\sqrt{a^2}=a^{(\frac{1}{2})\times2}=a=|a|$. Now if $a<0$, so $\sqrt{(-a)^2}=\sqrt{-a\times-a}=\sqrt{a^2}=a^{(\frac{1}{2})\times2}=a=|a|$. For 0, it is only a substitution exercise, $\sqrt{0^2}=\sqrt{0}=0=|0|$.
+    \end{enumerate}
 \end{document}
