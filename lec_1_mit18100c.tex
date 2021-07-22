@@ -81,54 +81,54 @@ Lecture 1. Sets. Ordered Sets. Examples. Ordering pairs of numbers. Largest elem
 \section{Sets}
 Before we start with the mathematical analysis, we need review some topics of the set theoretic. Lets start by the definition of a general set, after that we'll go define the most important numerical sets. We'll also define what is an ordered set and their consequences as a maximum and minimum elements in its subset and ordering pairs of elements, resulted by the operations with this sets.
 
-A set $\mathcal{S}$ is a collection of objects $x$, which each object has a common property $p$. 
+A set $S$ is a collection of objects $x$, which each object has a common property $p$. 
 We can take the set of people who has black eyes ($x$ is the people and $p$ is the property "has black eyes" or the set planets which aren't in ours galaxy ($x$ is the planets and $p$ is the property "the planet must be out of our galaxy"). Obviously we have no interest about that kind of sets.
 
 The sets we need study here are collections of mathematical objects, as numbers, functions, sequences, series, metric spaces among others. So, lets take a more formal definition of a set,
 
 \begin{defn}
-    Given $\mathcal{S}=\lbrace x\mid x \text{ has a property } p\rbrace$, we say that $\mathcal{S}$ is a set which its elements are all objects $x$ with the property $p$.
+    Given $S=\lbrace x\mid x \text{ has a property } p\rbrace$, we say that $S$ is a set which its elements are all objects $x$ with the property $p$.
 \end{defn}
 
-Let $\mathcal{S}$ above, if $x$ has the property $p$, we say that $x$ is an element of $\mathcal{S}$ or, more exactly, $x$ is in $\mathcal{S}$, and we formally write,
+Let $S$ above, if $x$ has the property $p$, we say that $x$ is an element of $S$ or, more exactly, $x$ is in $S$, and we formally write,
 \begin{center}
-    $x\in\mathcal{S}$
+    $x\in S$
 \end{center}
 
-Otherwise, if $x \text{ has no the property} p$, then we say that $x$ is not in $\mathcal{S}$ write,
+Otherwise, if $x \text{ has no the property} p$, then we say that $x$ is not in $S$ write,
 \begin{center}
-    $x\notin\mathcal{S}$
+    $x\notin S$
 \end{center}
 
 \begin{ex}
-Let $x$ be any geometric polygon shapes (triangles, squares, rectangles, \dots) and $S=\lbrace x \mid \text{number of vertices of }x \leq 4\rbrace$, rewrite $\mathcal{S}$ with the name of its elements.
+Let $x$ be any geometric polygon shapes (triangles, squares, rectangles, \dots) and $S=\lbrace x \mid \text{number of vertices of }x \leq 4\rbrace$, rewrite $S$ with the name of its elements.
 
-First of all, we need find the elements of $\mathcal{S}$. Then lets do it:
+First of all, we need find the elements of $S$. Then lets do it:
 \begin{itemize}
-  \item A triangle has $3$ vertices, how $3\leq4$ is true, then triangle $\in \mathcal{S}$.
-  \item A square has $4$ vertices, how $4\leq4$ is true, then square $\in \mathcal{S}$.
-  \item A rectangle has $4$ vertices, how $4\leq4$ is true, then rectangle $\in \mathcal{S}$.
-  \item A trapezium has $4$ vertices, how $4\leq4$ is true, then trapezium $\in \mathcal{S}$.
-  \item A parallelogram has $4$ vertices, how $4\leq4$ is true, then parallelogram $\in \mathcal{S}$.
-  \item A rhombus has $4$ vertices, how $4\leq4$ is true, then rhombus $\in \mathcal{S}$.
-  \item A kite has $4$ vertices, how $4\leq4$ is true, then kite $\in \mathcal{S}$.
-  \item A pentagon has $5$ vertices, how $5\leq4$ is false, then pentagon $\notin\mathcal{S}$.
-  \item The other polygons has more than 5 vertices, than there isn't any one more element with number of vertices $\leq4$, than they $\notin\mathcal{S}$.
+  \item A triangle has $3$ vertices, how $3\leq4$ is true, then triangle $\in S$.
+  \item A square has $4$ vertices, how $4\leq4$ is true, then square $\in S$.
+  \item A rectangle has $4$ vertices, how $4\leq4$ is true, then rectangle $\in S$.
+  \item A trapezium has $4$ vertices, how $4\leq4$ is true, then trapezium $\in S$.
+  \item A parallelogram has $4$ vertices, how $4\leq4$ is true, then parallelogram $\in S$.
+  \item A rhombus has $4$ vertices, how $4\leq4$ is true, then rhombus $\in S$.
+  \item A kite has $4$ vertices, how $4\leq4$ is true, then kite $\in S$.
+  \item A pentagon has $5$ vertices, how $5\leq4$ is false, then pentagon $\notin S$.
+  \item The other polygons has more than 5 vertices, than there isn't any one more element with number of vertices $\leq4$, than they $\notin S$.
 \end{itemize}
 
 That way, we have,
 \begin{center}
-    $\mathcal{S}=\lbrace\textit{triangle}, \textit{square}, \textit{rectangle}, \textit{trapezium}, \textit{parallelogram}, \textit{rhombus}, \textit{kite}\rbrace$
+    $S=\lbrace\textit{triangle}, \textit{square}, \textit{rectangle}, \textit{trapezium}, \textit{parallelogram}, \textit{rhombus}, \textit{kite}\rbrace$
 \end{center}
 \end{ex}
 The example above shows us that we can describe a set in two ways, generally or specific, the specific way is good to work with sets whose a few elements, for sets with a great number of elements, generally way is more appropriated.
 
-Sometimes, there is no one element that satisfies a property $p$. In this case, we are in front of a set $\mathcal{S}$ with no one element. It is called the \textit{empty set} and denoted by $\varnothing$, so
+Sometimes, there is no one element that satisfies a property $p$. In this case, we are in front of a set $S$ with no one element. It is called the \textit{empty set} and denoted by $\emptyset$, so
 
 \begin{defn}
-Let $\mathcal{S}$ a set,
+Let $S$ a set,
 \begin{center}
-    $\forall x$, we have $x \notin \mathcal{S}\Rightarrow \mathcal{S}=\varnothing$.
+    $\forall x$, we have $x \notin S\Rightarrow S=\emptyset$.
 \end{center}
 \end{defn}
 
@@ -167,15 +167,15 @@ The set of rational numbers, which is represented by capital letter $\mathbb{Q}$
 \section{Ordered Sets}
 
 \begin{defn}
-Let $\mathcal{S}$ be a set. An \textit{order} on $\mathcal{S}$ is a relation, denoted by $<$, with the following two properties:
+Let $S$ be a set. An \textit{order} on $S$ is a relation, denoted by $<$, with the following two properties:
 \begin{enumerate}
-    \item $x \in \mathcal{S} \Rightarrow \text{one and only one of the following statements is true:}$
+    \item $x \in S \Rightarrow \text{one and only one of the following statements is true:}$
     \begin{enumerate}
         \item $x<y$;
         \item $x=y$;
         \item $y<x$.
     \end{enumerate}
-    \item $x<y \text{ and } y<z, x,y,z \in \mathcal{S} \Rightarrow x<z$.
+    \item $x<y \text{ and } y<z, x,y,z \in S \Rightarrow x<z$.
 \end{enumerate}
 \end{defn}
 
@@ -184,7 +184,7 @@ The statement $x<y$ may be read as \textit{"$x$ is less than $y$"} or \textit{$x
 The notation $x\leq y$ indicates that $x<y$ or $x=y$, without specifying which of these two is to hold. In other words, $x\leq y$ is the negation of $x>y$.
 
 \begin{defn}
-An \textit{ordered set} is a set $\mathcal{S}$ in which an order is defined and is denoted by $(\mathcal{S}, <)$.
+An \textit{ordered set} is a set $S$ in which an order is defined and is denoted by $(S, <)$.
 \end{defn}
 
 \begin{ex}
@@ -192,24 +192,55 @@ $\mathbb{Q}$ is an ordered set if $\forall r,s \in \mathbb{Q}, r<s$ is defined t
 \end{ex}
 
 \begin{defn}[Bounded Above]
-Suppose $\mathcal{S}$ is an ordered set. Let $\mathcal{E}\subset\mathcal{S}$. If exists $\beta \in \mathcal{S}$ such that $x \leq \beta$ for all $x$ in $\mathcal{E}$, we say that $\mathcal{E}$ is bounded above and call $\beta$ an upper bound of $\mathcal{E}$. In mathematical words:
+Suppose $S$ is an ordered set. Let $E\subset S$. If exists $\beta \in S$ such that $x \leq \beta$ for all $x$ in $E$, we say that $E$ is bounded above and call $\beta$ an upper bound of $E$. In mathematical words:
 
 \begin{center}
-    $\exists \beta\in\mathcal{S} \mid x\leq\beta, \forall x\in\mathcal{E},(\mathcal{S},<),\mathcal{E}\subset\mathcal{S}\Rightarrow\mathcal{E}$ is bounded above and $\beta$ is an upper bound of $\mathcal{E}$.
+    $\exists \beta\in S \mid x\leq\beta, \forall x\in E,(S,<),E\subset S\Rightarrow E$ is bounded above and $\beta$ is an upper bound of $E$.
 \end{center}
 \end{defn}
-More easily, if exists at least one element in $\mathcal{S}$ which is bigger than all elements of $\mathcal{E}$, this element is an upper bound of $\mathcal{E}$ and we say that $\mathcal{E}$ is bounded above.
+More easily, if exists at least one element in $S$ which is bigger than all elements of $E$, this element is an upper bound of $E$ and we say that $E$ is bounded above.
 
 \begin{defn}[Bounded Below]
-Suppose $\mathcal{S}$ is an ordered set. Let $\mathcal{E}\subset\mathcal{S}$. If exists $\beta \in \mathcal{S}$ such that $\beta\leq x$ for all $x$ in $\mathcal{E}$, we say that $\mathcal{E}$ is bounded below and call $\beta$ a lower bound of $\mathcal{E}$. In mathematical words:
+Suppose $S$ is an ordered set. Let $E\subset S$. If exists $\beta \in S$ such that $\beta\leq x$ for all $x$ in $E$, we say that $E$ is bounded below and call $\beta$ a lower bound of $E$. In mathematical words:
 
 \begin{center}
-    $\exists \beta\in\mathcal{S} \mid \beta\leq x, \forall x\in\mathcal{E},(\mathcal{S},<),\mathcal{E}\subset\mathcal{S}\Rightarrow\mathcal{E}$ is bounded below and $\beta$ is a lower bound of $\mathcal{E}$.
+    $\exists \beta\in S \mid \beta\leq x, \forall x\in E,(S,<),E\subset S\Rightarrow E$ is bounded below and $\beta$ is a lower bound of $E$.
 \end{center}
 \end{defn}
-This means, if exists at least one element in $\mathcal{S}$ which is smaller than all elements of $\mathcal{E}$, this element is a lower bound of $\mathcal{E}$ and we say that $\mathcal{E}$ is bounded below.
+This means, if exists at least one element in $S$ which is smaller than all elements of $E$, this element is a lower bound of $E$ and we say that $E$ is bounded below.
 
-continue from here
+\begin{defn}
+Suppose $S$ is an ordered set, $E\subset S$ and $E$ is bounded above. Also suppose there exists an $\alpha\in S$ with following properties:
+
+\begin{enumerate}
+    \item $\alpha$ is an upper bound of $E$.
+    \item If $\gamma<\alpha$, then $\gamma$ is not an upper bound of $E$.
+\end{enumerate}
+
+This way, $\alpha$ is called the least upper bound of $E$ or the \textit{supremum} of $E$, and we write
+\begin{center}
+    $\alpha=\sup E$.
+\end{center}
+
+The greatest lower bound or \textit{infimum} of a set $E$ which is bounded below is defined in the same manner: The statement
+\begin{center}
+    $\alpha=\inf E$
+\end{center}
+
+means that $\alpha$ is a lower bound of $E$ and that no $\beta$, with $\beta>\alpha$, is a lower bound of $E$.
+\end{defn}
+
+\begin{ex}
+If $\alpha=\sup E$ exits, then $\alpha$ may or may not be a member of $E$. Take two sets $E_1$ and $E_2$, both subsets of $\mathbb{Q}$, such that $E_1=\{r\in\mathbb{Q}\mid r<0\}$ and $E_2=\{r\in \mathbb{Q}\mid r\leq 0\}$, then
+    \begin{center}
+        $\sup E_1=\sup E_2=0$,
+    \end{center}
+    and $0\notin E_1$ and $0\in E_2$.
+\end{ex}
+
+\begin{ex}
+Let $E=\{1/n\mid n\in \mathbb{N}\}$, it's easy to see that $E\subset\mathbb{Q}$ such that for $n=1$ we find the first member of $E$ which is $1$ and for each $n>1\Rightarrow 0<i/n<1$, thus, if $n\mapsto\infty\Rightarrow 1/n\mapsto 0$, but $1/n$ will never be equals to $0$. Then $\sup E=1$, which is in $E$ and $\inf E=0$, which is not in $E$.
+\end{ex}
 
 \begin{bibdiv}
         \begin{biblist}
